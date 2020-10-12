@@ -1,0 +1,43 @@
+$padding: 1rem;
+$mb     : 1rem;
+
+.l-container {
+    max-width    : 1200px;
+    padding-left : $padding;
+    padding-right: $padding;
+ 
+    @include media(large){
+        margin-left : auto;
+        margin-right: auto;
+    }
+    
+}
+
+.banner{
+    display: grid;
+    grid-template-areas: 'banner-image banner-image'
+                         'banner-content banner-content'  
+    ;
+
+    @include media(medium){
+        grid-template-areas: 'banner-content banner-image';
+    }
+}
+
+.banner-content{
+    grid-area:banner-content;
+}
+
+.banner-img{
+    grid-area: banner-image;
+}
+.center{
+    text-align: center ;
+}
+.mb-1{
+    @include mb(1rem)
+}
+
+.mb-2{
+    @include mb(2rem);
+}

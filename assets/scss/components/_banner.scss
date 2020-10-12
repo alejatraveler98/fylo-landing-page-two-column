@@ -1,0 +1,26 @@
+.banner{
+    @include media(medium){
+        @include flex(row,space-between,center);
+        
+    }
+
+    &-title{
+        font-size: var(--h1-font-size);
+    }
+
+    &-paragraph{
+        font-size: 13px;
+    }
+
+    &-input{
+        width: 100%;
+        height:2.5rem;
+    }
+
+    &-form{
+        @include media(medium){
+            @include flex(row,center,center);
+
+        }
+    }
+}
