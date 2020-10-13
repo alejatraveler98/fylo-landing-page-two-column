@@ -1,0 +1,15 @@
+.access{
+    background-color: var(--desaturated-blue);
+    &-content{
+        padding:3.5rem;
+        color:var(--grayish-blue);
+
+        &__title{
+            font-size:15px;
+        }
+    }
+
+    &-form{
+        padding:0 1rem;
+    }
+}
