@@ -31,13 +31,20 @@ $mb     : 1rem;
 .banner-img{
     grid-area: banner-image;
 }
-.center{
+.center-i{
     text-align: center ;
+    @include media(medium){
+        text-align: left;
+    }
+}
+
+.center{
+    text-align: center;
 }
 .mb-1{
     @include mb(1rem)
 }
 
-.mb-2{
-    @include mb(2rem);
+.mb-separation{
+    @include mb(5rem);
 }

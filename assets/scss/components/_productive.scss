@@ -1,0 +1,10 @@
+.productive{
+
+    &-img{
+        @include box(2rem)
+    }
+    &-link{
+        @include flex(row,center,center);
+        margin-bottom:3rem;
+    }
+}
