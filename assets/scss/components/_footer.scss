@@ -1,12 +1,45 @@
 .footer{
     background-color: var(--dark-blue);
-    
+    color: var(--grayish-blue);
+    font-size: var(--small-font-size);
     &-img{
         margin-top: 2rem;
-        width:200px;
+        margin-bottom: 2rem;
+        width:150px;
     }
 
     &-icons{
-        width:1rem;
+        margin-bottom: 2rem;
+        &__content{
+            width:1rem;
+            margin-right: 1rem;
+        }
     }
+
+    &-nav__list{
+        margin-bottom: 2rem;
+    }
+    
+    &-nav__items{
+        padding-bottom: 1rem;
+
+    }
+
+    &-nav__link{
+        color:var(--grayish-blue);
+
+    }
+}
+
+.icons{
+    @include flex(row,center,center);
+}
+.icons-networks{
+    width:1.5rem;
+    margin: 1rem;
+    
+}
+
+.coded{
+    margin-bottom: 0;
 }

@@ -13,6 +13,11 @@ $mb     : 1rem;
     
 }
 
+.l-footer{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
 .banner{
     display: grid;
     grid-template-areas: 'banner-image banner-image'
@@ -44,7 +49,9 @@ $mb     : 1rem;
 .mb-1{
     @include mb(1rem)
 }
-
+.mb-2{
+    @include mb(2rem)
+}
 .mb-separation{
     @include mb(5rem);
 }
