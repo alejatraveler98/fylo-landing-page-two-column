@@ -136,8 +136,10 @@ h2 {
   font-size: var(--small-font-size);
 }
 
-.paragraph-information {
-  width: 50%;
+@media screen and (min-width: 960px) {
+  .paragraph-information {
+    width: 80%;
+  }
 }
 
 .button {
@@ -165,6 +167,10 @@ h2 {
   .button-banner {
     width: 40%;
   }
+}
+
+.button-access {
+  margin-left: 0;
 }
 
 .main-header {
@@ -427,12 +433,14 @@ h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 }
 
@@ -440,8 +448,34 @@ h2 {
   font-size: 15px;
 }
 
+@media screen and (min-width: 640px) {
+  .access-content__title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .access-information {
+    width: 50%;
+  }
+}
+
 .access-form {
   padding: 0 1rem;
+}
+
+@media screen and (min-width: 960px) {
+  .access-form {
+    width: 50%;
+    padding-left: 5rem;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .access-form > input {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
 }
 
 .footer {
