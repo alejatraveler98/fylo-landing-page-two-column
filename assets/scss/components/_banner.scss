@@ -1,6 +1,6 @@
 .banner{
     @include media(large){
-        @include flex(row,space-between,center);
+        @include flex(row-reverse,space-between,center);
     }
 
     &-content{

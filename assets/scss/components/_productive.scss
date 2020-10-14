@@ -1,10 +1,33 @@
 .productive{
 
+    &-section{
+        @include media(large){
+            @include flex(row-reverse,space-between,center);
+        }
+
+        &__item{
+            @include media(medium){
+                padding: 0 6rem;
+            }
+            @include media(large){
+                padding:0 4rem;
+                width:120%;
+            }
+        }
+        
+    }
     &-img{
         @include box(2rem)
     }
-    &-link{
+    &-how{
         @include flex(row,center,center);
+        @include media(large){
+            justify-content: flex-start;
+        }
         margin-bottom:3rem;
+    }
+    
+    &-link{
+        color:var(--moderate-cyan);
     }
 }

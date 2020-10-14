@@ -18,24 +18,24 @@ $mb     : 1rem;
     padding-right: 2rem;
 }
 
-.banner{
-    display: grid;
-    grid-template-areas: 'banner-image banner-image'
-                         'banner-content banner-content'  
-    ;
+// .banner{
+//     display: grid;
+//     grid-template-areas: 'banner-image banner-image'
+//                          'banner-content banner-content'  
+//     ;
 
-    @include media(large){
-        grid-template-areas: 'banner-content banner-image';
-    }
-}
+//     @include media(large){
+//         grid-template-areas: 'banner-content banner-image';
+//     }
+// }
 
-.banner-content{
-    grid-area:banner-content;
-}
+// .banner-content{
+//     grid-area:banner-content;
+// }
 
-.banner-img{
-    grid-area: banner-image;
-}
+// .banner-img{
+//     grid-area: banner-image;
+// }
 .center-i{
     text-align: center ;
     @include media(large){
