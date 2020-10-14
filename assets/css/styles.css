@@ -11,8 +11,8 @@ de nosotros que medidas vamos a tomar porque */
   --z-modal: 1000; }
 
 :root {
-  --dark-blue:hsl(243,87%,12%);
-  --desaturated-blue:hsl(238,22%,44%);
+  --dark-blue: hsl(243,87%,12%);
+  --desaturated-blue: hsl(238,22%,44%);
   --bright-blue: hsl(224,93%,58%);
   --moderat-cyan: hsl(170,45%,43%);
   --grayish-blue: hsl(240,75%,98%);
@@ -26,10 +26,10 @@ de nosotros que medidas vamos a tomar porque */
   --small-font-size: .9rem; }
   @media screen and (min-width: 640px) {
     :root {
-      --h1-font-size:2rem;
+      --h1-font-size: 2rem;
       --h2-font-size: 1.25rem;
       --h3-font-size: 1rem;
-      --small-font-size:.95rem; } }
+      --small-font-size: .95rem; } }
 
 *, *::before, *::after {
   box-sizing: border-box; }
@@ -86,7 +86,7 @@ h2 {
 .banner {
   display: grid;
   grid-template-areas: 'banner-image banner-image' 'banner-content banner-content'; }
-  @media screen and (min-width: 640px) {
+  @media screen and (min-width: 960px) {
     .banner {
       grid-template-areas: 'banner-content banner-image'; } }
 
@@ -98,7 +98,7 @@ h2 {
 
 .center-i {
   text-align: center; }
-  @media screen and (min-width: 640px) {
+  @media screen and (min-width: 960px) {
     .center-i {
       text-align: left; } }
 
@@ -126,6 +126,15 @@ h2 {
   color: white;
   background-color: var(--bright-blue); }
 
+.button-banner {
+  width: 100%; }
+  @media screen and (min-width: 640px) {
+    .button-banner {
+      width: 50%; } }
+  @media screen and (min-width: 960px) {
+    .button-banner {
+      width: 40%; } }
+
 .main-header {
   margin-top: 1rem; }
 
@@ -148,25 +157,40 @@ h2 {
   .menu-list__link {
     color: black; }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 960px) {
   .banner {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center; } }
 
+@media screen and (min-width: 640px) {
+  .banner-content {
+    padding: 0 6rem; } }
+
+@media screen and (min-width: 960px) {
+  .banner-content {
+    padding: 0 4rem; } }
+
 .banner-title {
   font-size: var(--h1-font-size); }
 
 .banner-input {
   width: 100%;
-  height: 2.5rem; }
+  height: 2.5rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #bfbfbf; }
+  @media screen and (min-width: 640px) {
+    .banner-input {
+      width: 60%;
+      margin-bottom: 0; } }
 
 @media screen and (min-width: 640px) {
   .banner-form {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center; } }
 
 .productive-img {

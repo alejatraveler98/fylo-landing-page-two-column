@@ -3,15 +3,19 @@
     padding: .8rem 3rem;
     font-weight: 700;
     font-size:.8rem;
-    // @include media(large){
-    //     padding: 1rem 6rem;
-    // }
 }
 
 .button-blue{
     color:white;
     background-color: var(--bright-blue);
-    // margin          : 0 4rem;
-    // background-image: linear-gradient(to right, var(--color-cyan), var(--color-blue));
-    // border-radius   : 50px;
+}
+
+.button-banner{
+    width: 100%;
+    @include media(medium){
+        width: 50%;
+    }
+    @include media(large){
+        width: 40%;
+    }
 }

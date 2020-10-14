@@ -24,7 +24,7 @@ $mb     : 1rem;
                          'banner-content banner-content'  
     ;
 
-    @include media(medium){
+    @include media(large){
         grid-template-areas: 'banner-content banner-image';
     }
 }
@@ -38,9 +38,9 @@ $mb     : 1rem;
 }
 .center-i{
     text-align: center ;
-    @include media(medium){
+    @include media(large){
         text-align: left;
-    }
+    }   
 }
 
 .center{
