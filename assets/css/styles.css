@@ -136,6 +136,10 @@ h2 {
   font-size: var(--small-font-size);
 }
 
+.paragraph-information {
+  width: 50%;
+}
+
 .button {
   padding: .8rem 3rem;
   font-weight: 700;
@@ -412,6 +416,24 @@ h2 {
 .access-content {
   padding: 3rem;
   color: var(--grayish-blue);
+}
+
+@media screen and (min-width: 960px) {
+  .access-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .access-content__title {

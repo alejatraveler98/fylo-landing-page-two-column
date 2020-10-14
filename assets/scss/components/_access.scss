@@ -4,12 +4,19 @@
         padding:3rem;
         color:var(--grayish-blue);
 
+        @include media(large){
+            @include flex(row,center,center);
+        }
         &__title{
             font-size:15px;
         }
     }
 
+    &-information{
+        // width:50%;
+    }
     &-form{
         padding:0 1rem;
     }
 }
+
