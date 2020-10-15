@@ -8,12 +8,19 @@
         width:150px;
     }
 
+    
     &-icons{
         margin-bottom: 2rem;
         &__content{
             width:1rem;
             margin-right: 1rem;
         }
+    }
+    
+    &-nav{
+            @include media(medium){
+                @include flex(row,space-around,start);
+            }
     }
 
     &-nav__list{

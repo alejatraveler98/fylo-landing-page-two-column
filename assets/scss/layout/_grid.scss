@@ -16,6 +16,18 @@ $mb     : 1rem;
 .l-footer{
     padding-left: 2rem;
     padding-right: 2rem;
+
+}
+
+.footer-grid{
+    @include media(medium){
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+        grid-template-columns: repeat(3,1fr);
+        text-align: center;
+    }
+    
 }
 
 // .banner{

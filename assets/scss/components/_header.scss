@@ -7,9 +7,13 @@
 }
 
 .main-menu{
-    
-    @include flex(row,space-between,center);
-    margin-bottom: rem;
+    @include flex(column,center,center);
+
+    @include media(semismall){
+        @include flex(row,space-between,center);
+        margin-bottom: 1rem;
+
+    }
     &__logo{
         width:150px;
     }
@@ -17,7 +21,11 @@
 }
 
 .menu-list{
-    @include flex(row,space-between,center);
+    @include flex(column, space-between,center);
+    @include media(semismall){
+
+        @include flex(row,space-between,center);
+    }
     
     &__item{
         padding:1rem;
